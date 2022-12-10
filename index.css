@@ -1,0 +1,230 @@
+body{
+    background-color: #f7f7f7;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    height: 280px;
+    width: 500px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    perspective: 880px;
+    -webkit-perspective: 800px;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transform-style: preserve-3d;
+    -webkit-transform-style: calc(preserve-3d);
+   transition: 2s;
+}
+.card:hover{
+    transform:rotateY(-180deg);
+}
+.font{
+    background-color: #252628;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+backface-visibility: hidden;
+
+}
+.name{
+    position:absolute;
+    color: white;
+    font-size: 25px;
+    top: 130px;
+    left: 145px;
+    font-family:"popins,sans-serif";
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.slogan{
+    color: #faa510;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-style: italic;
+    top: 159px;
+    bottom: 130px;
+    right: 90px;
+    left: 220px;
+    font-size: 15px;
+    font-style: italic;
+}
+.back{
+    background-color:white;
+    height:100%;
+    width: 100%;
+    position:absolute;
+    bottom: 0%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.container{
+    background: color #252628;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.container:before{
+    position: absolute;
+    content: "";
+    background-color: #252628;
+    height: 60px;
+    width:100%;
+    margin: auto;
+}
+.details{
+    height: 255px;
+    width: 285px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content:center ;
+}
+.name1{
+    font-family: "poppins",sans-serif;
+    font-size: 28px;
+    position: absolute;
+    top: 1px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.position{
+    font-family: "Poppins",sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    position: absolute;
+    top: 33px;
+    color: #444444;
+}
+.divider{
+    background-color: #faa51a;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+}
+.number{
+    position: absolute;
+    top: 80px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family:"Work-Sans",sans-serif;
+}
+.email{
+    position: absolute;
+    top: 115px;
+    font-size: 15px;
+    font-family:"Work-Sans",sans-serif;
+}
+.address{
+    position: absolute;
+    top: 155px;
+    font-size: 14px;
+    font-family:"Work-Sans",sans-serif;
+}
+@media screen 
+  and (max-width: 450px){ 
+    .card{
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 580px;
+    width: 320px;
+    background-color: black;
+    transform-style:preserve-3d;
+    -webkit-transform-style:calc(preserve-3d);
+    transition: none;
+    margin-top: -30px;
+    } 
+    .name{
+        position:absolute;
+        color: white;
+        font-size: 32px;
+        top: 210px;
+        left: 90px;
+        font-family:"popins,sans-serif";
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .slogan{
+        color: #faa510;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        font-style: italic;
+        top: 250px;
+        bottom: 50px;
+        left: 150px;
+        font-size: 14px;
+        font-style: italic;
+    }
+    .details{
+        height: 500px;
+        width: 350px;
+        position:absolute;
+        margin-left: 70px;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    
+.name1{
+    font-family: "poppins",sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.position{
+    font-family: "Poppins",sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    color: #444444;
+}
+.divider{
+    background-color: #faa51a;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+}
+.number{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family:"Work-Sans",sans-serif;
+}
+.email{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-size: 18px;
+    font-family:"Work-Sans",sans-serif;
+}
+.address{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 18px;
+    font-family:"Work-Sans",sans-serif;
+}
+}
